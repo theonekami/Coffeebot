@@ -10,7 +10,7 @@ import datetime, json
 import math
 
 
-def basic_check(ctx):  ##for funsies
+def basic_check(ctx):  
     if (ctx.author == ctx.guild.owner) or (ctx.author == BOSS):
         return True
     else:
@@ -102,8 +102,9 @@ async def dab(ctx, *, args='1'):
 @client.command()
 async def cat(ctx):
     em = discord.Embed(title="Cat Pix")
-    async with aiohttp.get("http://thecatapi.com/api/images/get") as res:
-        await ctx.say(res)
+    async with aiohttp.ClientSession() as session:
+        async with session.get("http://thecatapi.com/api/images/get") as res:
+            await ctx.say(res)
 
 
 @client.command() 
