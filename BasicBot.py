@@ -5,7 +5,7 @@ from discord.ext import commands
 import platform
 import random
 import sys, os
-##import aiohttp
+import aiohttp
 import datetime, json
 import math
 
