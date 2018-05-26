@@ -4,10 +4,6 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import platform
 import random
-<<<<<<< HEAD
-import sys, os
-=======
->>>>>>> f55cbeb212e30047e2c4dac45e665dd11cb0d8c1
 
 import datetime, json
 import math
