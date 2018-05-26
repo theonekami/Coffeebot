@@ -102,7 +102,7 @@ async def dab(ctx, *, args='1'):
 @client.command()
 async def cat(ctx):
     em = discord.Embed(title="Cat Pix")
-    em.set_image("http://thecatapi.com/api/images/get")
+    em.set_image(url="http://thecatapi.com/api/images/get")
     await ctx.send(embed= em)
 
 
