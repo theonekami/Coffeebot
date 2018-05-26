@@ -99,11 +99,18 @@ async def dab(ctx, *, args='1'):
         await asyncio.sleep(0.5)  ##        """The first command in the process of making it YUNo?"""
 
 
-##        w=json.load(open("quotes.json"))
-@client.command()  ##        x=str(random.choice(w))
-async def docs(ctx):  ##        y=str(ctx.author.nick)
+@client.command()
+async def cat(ctx):
+    em = discord.Embed(title="Cat Pix")
+    em.set_image("http://thecatapi.com/api/images/get")
+    await ctx.send(embed= em)
+
+
+@client.command() 
+async def docs(ctx):
     x = '\nHere are the main docs\n\nhttps://docs.google.com/document/d/1QM77dBRFlyKUdzJytyxbBh6osvd629B-QOyRDBm3Kiw/edit# \n\n\nhttps://docs.google.com/document/d/1ULrJfzj9rd7Pd7SHX_0pgcrXLLR77q5qvGk04OSZteQ/edit \n\n\nhttps://docs.google.com/document/d/1k6ivv_ljadAuKqQ2st1kDrIt9x2-vHogqU5Q8S6n0yA/edit\n'  ####        for i in digits:
-    await ctx.author.send(x)  ####                y=y.replace(i,"")
+    await ctx.author.send(x)
+    await ctx.send("Look into your dms....")
 
 
 
@@ -182,31 +189,5 @@ async def ships(ctx):
         """
         await ctx.send(x)
     
-####    await zek.create_dm()
-##    if (zek.dm_channel):
-##        await ctx.send("ok this should work")
-##    else:
-##        await ctx.send("oh booo")
-
-
-##@client.command.check(basic_check)        
-##@client.command(pass_context = True)
-##async def sendm(ctx,*, args=None):
-##        if(args == None):
-##            await ctx.send("so..uh..how am i supposed to know who to send???!")
-##        for i in ctx.server.members:
-##            if (i.mentioned in 
-##        await ctx.send(embed = em)
-
-
-
-##@client.command(pass_context = True)
-##async def sendm(ctx,*, args=None):
-##        if(args == None):
-##            await ctx.send("so..uh..how am i supposed to know who to send???!")
-##        for i in ctx.server.members:
-##            if (i.mentioned in 
-##        await ctx.send(embed = em)
-        
 
 client.run('NDA3MDY0OTIyMTU4MjY4NDE2.DdwY-w.l_CjW6tratHXia6MUJ-xll3Ti5Q')
