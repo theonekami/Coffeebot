@@ -104,7 +104,7 @@ async def cat(ctx):
     em = discord.Embed(title="Cat Pix")
     async with aiohttp.ClientSession() as session:
         async with session.get("http://thecatapi.com/api/images/get") as res:
-            await ctx.say(res)
+            await ctx.say(res.url)
 
 
 @client.command() 
