@@ -3,7 +3,11 @@ import asyncio
 from discord.ext.commands import Bot
 from discord.ext import commands
 import platform
+<<<<<<< HEAD
 import sys, os
+=======
+import random
+>>>>>>> 9b3727e2bb9b7d33e90d9d6c4c524f1415865140
 
 import datetime, json
 import math
